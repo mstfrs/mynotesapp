@@ -148,7 +148,7 @@ const InputArea = () => {
           />
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 place-self-center w-1/2 lg:w-full md:w-full">
-          {notes===null?null:(filterednotes.length === 0 ?notes: filterednotes).map((note) => (
+          {(filterednotes.length === 0  ?notes: filterednotes).map((note) => (
             <div
               key={note.id}
               className=" items-center object-center self-center content-center m-auto w-full"
